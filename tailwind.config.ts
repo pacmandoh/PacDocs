@@ -52,7 +52,7 @@ export default <Partial<Config>>{
         }
       },
       fontFamily: {
-        sans: ['Public Sans', ...defaultTheme.fontFamily.sans]
+        sans: ['DM Sans', ...defaultTheme.fontFamily.sans]
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))'
