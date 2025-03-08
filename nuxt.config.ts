@@ -6,10 +6,13 @@ export default defineNuxtConfig({
 
   // extenal modules
   modules: [
-    '@nuxt/content', // CMS
+    '@nuxt/image',
     '@nuxt/ui-pro',
+    '@nuxt/content', // CMS
     '@nuxt/eslint',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'nuxt-og-image',
+    'nuxt-llms'
   ],
 
   devtools: {
