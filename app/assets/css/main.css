@@ -5,7 +5,11 @@
 @source "../../../content/**/*";
 
 @theme static {
+  /* Default font family */
   --font-sans: 'DM Sans', sans-serif;
+  /* Customize */
+  --font-pacifico: 'Pacifico', sans-serif;
+  --font-caveat: 'Caveat', sans-serif;
 
   --color-green-50: #EFFDF5;
   --color-green-100: #D9FBE8;
