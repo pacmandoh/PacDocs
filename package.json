@@ -33,7 +33,8 @@
     "nuxt": "^3.16.0",
     "nuxt-llms": "^0.1.0",
     "nuxt-og-image": "^5.0.0",
-    "ofetch": "^1.4.1"
+    "ofetch": "^1.4.1",
+    "shiki-transformer-color-highlight": "^1.0.0"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.2.0",
