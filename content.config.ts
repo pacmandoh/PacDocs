@@ -1,56 +1,40 @@
-import { defineContentConfig, defineCollection } from '@nuxt/content'
-import {logger} from '@nuxt/kit'
+import { defineContentConfig, defineCollection, z } from '@nuxt/content'
 
-/**
- * content path
- * docs/example
- */ 
-const docsSourceBase = process.env.DOCS_PATH
-const examplesSourceBase = process.env.EXAMPLES_PATH 
-// remote docs files
-const docsSource: any = {
-  name: 'pacdocs-docs',
-  driver: 'github',
-  repo: 'pacmandoh/docs',
-  branch: 'main',
-  dir: 'docs',
-  prefix: '/1.docs',
-  token: process.env.GITHUB_TOKEN || ''
-}
-if (docsSourceBase) {
-  docsSource.driver = 'fs'
-  docsSource.base = docsSourceBase
-  logger.success(`Using local docs from ${docsSourceBase}`)
-}
-// remote examples
-const examplesSource: any = {
-  name: 'pacdocs-examples',
-  driver: 'github',
-  repo: 'pacmandoh/examples',
-  branch: 'main',
-  dir: 'docs',
-  prefix: '/docs/1.examples',
-  token: process.env.GITHUB_TOKEN || ''
-}
-if (examplesSourceBase) {
-  examplesSource.driver = 'fs'
-  examplesSource.base = examplesSourceBase
-  logger.success(`Using local examples from ${examplesSourceBase}`)
-}
+const schema = z.object({
+  category: z.enum(['layout', 'form', 'element', 'navigation', 'data', 'overlay']).optional(),
+  framework: z.string().optional(),
+  module: z.string().optional(),
+  navigation: z.object({
+    title: z.string().optional()
+  }),
+  links: z.array(z.object({
+    label: z.string(),
+    icon: z.string(),
+    avatar: z.object({
+      src: z.string(),
+      alt: z.string()
+    }).optional(),
+    to: z.string(),
+    target: z.string().optional()
+  }))
+})
 
 /**
  * defineContentConfig({})
  */
 export default defineContentConfig({
   collections: {
-    content: defineCollection({
-      // Specify the type of content in this collection
+    landing: defineCollection({
       type: 'page',
-      // Load every markdown file inside the `content` directory
-      source: {
+      source: 'index.md'
+    }),
+    docs: defineCollection({
+      type: 'page',
+      source: [{
         include: '**',
-        exclude: ['**/.!(navigation.yml)']
-      }
+        exclude: ['index.md']
+      }].filter(Boolean),
+      schema: schema
     })
   }
 })
