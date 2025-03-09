@@ -36,7 +36,7 @@
     "ofetch": "^1.4.1"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.1.0",
+    "@nuxt/eslint": "^1.2.0",
     "@nuxt/kit": "^3.16.0",
     "@vueuse/components": "^12.8.2",
     "@vueuse/core": "^12.8.2",
