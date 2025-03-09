@@ -1,7 +1,7 @@
 {
   "name": "pacdocs",
   "version": "2.1.0",
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.1",
   "homepage": "https://pacdocs.cn",
   "scripts": {
     "dev": "nuxi dev",
@@ -15,15 +15,15 @@
     "test": "pnpm lint && pnpm typecheck"
   },
   "dependencies": {
-    "@nuxt/content": "^3.2.2",
-    "@nuxt/ui-pro": "3.0.0-beta.2",
+    "@nuxt/content": "^3.3.0",
+    "@nuxt/ui-pro": "3.0.0-beta.3",
     "nuxt": "^3.15.4",
     "ofetch": "^1.4.1"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.1.0",
+    "@nuxt/eslint": "^1.2.0",
     "@nuxt/kit": "^3.15.4",
-    "eslint": "^9.21.0",
+    "eslint": "^9.22.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "vue-tsc": "^2.2.8"
