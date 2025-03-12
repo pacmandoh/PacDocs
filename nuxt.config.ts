@@ -1,3 +1,5 @@
+import pkg from './package.json'
+
 /**
  * nuxt config
  * defineNuxtConfig({})
@@ -12,12 +14,15 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    'nuxt-llms'
+    'nuxt-llms',
+    'motion-v/nuxt'
   ],
 
   devtools: {
     enabled: false
   },
+
+  css: ['~/assets/css/main.css'],
 
   // @nuxt/content config
   content: {
@@ -36,6 +41,16 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+
+  runtimeConfig: {
+    public: {
+      version: pkg.version
+    }
+  },
+
+  routeRules: {
+    '/docs': { redirect: '/docs/toc', prerender: false }
   },
 
   // for nuxt 4
@@ -59,6 +74,16 @@ export default defineNuxtConfig({
     defaults: {
       weights: [400, 500, 600, 700]
     },
-    provider: 'local'
+    provider: 'local',
+    experimental: {
+      processCSSVariables: true
+    }
+  },
+
+  // nuxt-llms
+  llms: {
+    domain: 'https://pacdocs.cn',
+    title: 'PacDocs',
+    description: '专注于分享'
   }
 })
