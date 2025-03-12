@@ -1,3 +1,4 @@
+import yaml from '@rollup/plugin-yaml'
 import pkg from './package.json'
 
 /**
@@ -59,6 +60,12 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-11-01',
+
+  vite: {
+    plugins: [
+      yaml()
+    ]
+  },
 
   // @nuxt/eslint
   eslint: {
