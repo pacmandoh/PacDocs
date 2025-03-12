@@ -24,15 +24,10 @@ const schema = z.object({
  */
 export default defineContentConfig({
   collections: {
-    landing: defineCollection({
-      type: 'page',
-      source: 'index.md'
-    }),
     docs: defineCollection({
       type: 'page',
       source: [{
-        include: '**',
-        exclude: ['index.md']
+        include: '**'
       }].filter(Boolean),
       schema: schema
     })
