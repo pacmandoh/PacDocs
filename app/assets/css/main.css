@@ -7,10 +7,12 @@
 @theme static {
   /* Default font family */
   --font-sans: 'DM Sans', sans-serif;
-  /* Customize */
+
+  /* Customize font */
   --font-pacifico: 'Pacifico', sans-serif;
   --font-caveat: 'Caveat', sans-serif;
 
+  /* color */
   --color-green-50: #EFFDF5;
   --color-green-100: #D9FBE8;
   --color-green-200: #B3F5D1;
@@ -22,4 +24,27 @@
   --color-green-800: #016538;
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
+
+  /* Customize animation */
+  --animate-heartbeat: heartbeat 1.5s linear infinite;
+  @keyframes heartbeat {
+    0%,
+    100% {
+      transform: scale(1)
+    }
+    10%,
+    30% {
+      transform: scale(.9)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: scale(1.1)
+    }
+    50%,
+    70% {
+      transform: scale(1.1)
+    }
+  }
 }
