@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@iconify-json/devicon':
+        specifier: ^1.2.20
+        version: 1.2.20
+      '@iconify-json/devicon-plain':
         specifier: ^1.2.19
         version: 1.2.19
-      '@iconify-json/devicon-plain':
-        specifier: ^1.2.18
-        version: 1.2.18
       '@iconify-json/heroicons':
         specifier: ^1.2.2
         version: 1.2.2
@@ -21,8 +21,8 @@ importers:
         specifier: ^1.2.4
         version: 1.2.4
       '@iconify-json/lucide':
-        specifier: ^1.2.29
-        version: 1.2.29
+        specifier: ^1.2.30
+        version: 1.2.30
       '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
@@ -657,11 +657,11 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/devicon-plain@1.2.18':
-    resolution: {integrity: sha512-PN6d34uWk8VNyfCSLEsE9CpfZbqMKPT/+976NX3JvvdqQApUM3KOZNz6IDhT/PrW/cl1SIcf+vMupm/J+nN7Ug==}
+  '@iconify-json/devicon-plain@1.2.19':
+    resolution: {integrity: sha512-XQpNjpF5OoPNpoqmCOUF/wcCJLHBcZeqCNA0kfktyKFjdRh9xuARWYyW51wqqzuayAsDDr2wyyKYkF3BhW144Q==}
 
-  '@iconify-json/devicon@1.2.19':
-    resolution: {integrity: sha512-OnVa/bfWB5K2ZeK/fD6VMwuP4PgfHX4jDFoXmHkBBJr13NmaFSpKcMdEXGpvl9u68u4HiMb3A/9PU4hDW6QXvA==}
+  '@iconify-json/devicon@1.2.20':
+    resolution: {integrity: sha512-aUJLqSQB1O1d5La/YXhZaKV10OrMgCpG954gIo2X34nqhZml+/MOj3ILrggb1EozDiheZq5ISUC0SD96+pTAZw==}
 
   '@iconify-json/heroicons@1.2.2':
     resolution: {integrity: sha512-qoW4pXr5kTTL6juEjgTs83OJIwpePu7q1tdtKVEdj+i0zyyVHgg/dd9grsXJQnpTpBt6/VwNjrXBvFjRsKPENg==}
@@ -669,8 +669,8 @@ packages:
   '@iconify-json/logos@1.2.4':
     resolution: {integrity: sha512-XC4If5D/hbaZvUkTV8iaZuGlQCyG6CNOlaAaJaGa13V5QMYwYjgtKk3vPP8wz3wtTVNVEVk3LRx1fOJz+YnSMw==}
 
-  '@iconify-json/lucide@1.2.29':
-    resolution: {integrity: sha512-bMrbX2zNnm+i601Yd5i7EClpOS4dWCe3q2B9k+f3RUFLOknQP1oj3D9upEN7ATbCJ/AmkKnFW5ND17ppX/Be8Q==}
+  '@iconify-json/lucide@1.2.30':
+    resolution: {integrity: sha512-0EaiofYbUwnp15sNC3cOJi0oD5DbbfDKbnIEA6jJ+WGHigyePgBVmx/5/S97XQmvl+Ix/Md3oGLKxkI5szL0rg==}
 
   '@iconify-json/mdi@1.2.3':
     resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
@@ -6048,11 +6048,11 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@iconify-json/devicon-plain@1.2.18':
+  '@iconify-json/devicon-plain@1.2.19':
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/devicon@1.2.19':
+  '@iconify-json/devicon@1.2.20':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -6064,7 +6064,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/lucide@1.2.29':
+  '@iconify-json/lucide@1.2.30':
     dependencies:
       '@iconify/types': 2.0.0
 
