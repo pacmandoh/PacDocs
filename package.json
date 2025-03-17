@@ -1,7 +1,7 @@
 {
   "name": "pacdocs",
   "version": "2.1.0",
-  "packageManager": "pnpm@10.6.2",
+  "packageManager": "pnpm@10.6.3",
   "homepage": "https://pacdocs.cn",
   "scripts": {
     "dev": "nuxi dev",
