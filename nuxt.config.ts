@@ -23,6 +23,17 @@ export default defineNuxtConfig({
     enabled: false
   },
 
+  app: {
+    head: {
+      htmlAttrs: {
+        'data-overlayscrollbars-initialize': ''
+      },
+      bodyAttrs: {
+        'data-overlayscrollbars-initialize': ''
+      }
+    }
+  },
+
   css: ['~/assets/css/main.css'],
 
   // @nuxt/content config
@@ -91,6 +102,6 @@ export default defineNuxtConfig({
   llms: {
     domain: 'https://pacdocs.cn',
     title: 'PacDocs',
-    description: '专注于分享'
+    description: '用心打造, 专注于分享!'
   }
 })

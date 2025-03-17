@@ -1,6 +1,7 @@
 
 @import "tailwindcss" theme(static);
 @import "@nuxt/ui-pro";
+@import "overlayscrollbars/overlayscrollbars.css";
 
 @source "../../../content/**/*";
 
@@ -11,19 +12,6 @@
   /* Customize font */
   --font-pacifico: 'Pacifico', sans-serif;
   --font-caveat: 'Caveat', sans-serif;
-
-  /* color */
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
-  --color-green-800: #016538;
-  --color-green-900: #0A5331;
-  --color-green-950: #052E16;
 
   /* Customize animation */
   --animate-heartbeat: heartbeat 1.5s linear infinite;
@@ -47,4 +35,25 @@
       transform: scale(1.1)
     }
   }
+}
+
+/* Override default */
+:root {
+  --ui-header-height: --spacing(20);
+}
+
+/* Customize OS theme */
+.os-theme-pacdocs {
+  box-sizing: border-box;
+  --os-size: 10px;
+  --os-padding-perpendicular: 2px;
+  --os-padding-axis: 2px;
+  --os-track-border-radius: 10px;
+  --os-handle-interactive-area-offset: 4px;
+  --os-handle-border-radius: var(--ui-radius);
+
+  /* Color */
+  --os-handle-bg: var(--ui-text-dimmed);
+  --os-handle-bg-hover: var(--ui-text-muted);
+  --os-handle-bg-active: var(--ui-text-toned);
 }
