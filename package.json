@@ -1,7 +1,7 @@
 {
   "name": "pacdocs",
   "version": "2.1.0",
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.6.4",
   "homepage": "https://pacdocs.cn",
   "scripts": {
     "dev": "nuxi dev",
@@ -21,7 +21,7 @@
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/simple-icons": "^1.2.29",
     "@nuxt/content": "^3.3.0",
-    "@nuxt/image": "^1.9.0",
+    "@nuxt/image": "^1.10.0",
     "@nuxt/ui-pro": "https://pkg.pr.new/@nuxt/ui-pro@64d35d1",
     "@rollup/plugin-yaml": "^4.1.2",
     "motion": "^12.5.0",
