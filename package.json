@@ -28,7 +28,7 @@
     "motion-v": "0.13.0",
     "nuxt": "^3.16.0",
     "nuxt-llms": "^0.1.0",
-    "nuxt-og-image": "^5.0.4",
+    "nuxt-og-image": "^5.0.5",
     "ofetch": "^1.4.1",
     "overlayscrollbars": "^2.11.1",
     "overlayscrollbars-vue": "^0.5.9",
