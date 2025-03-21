@@ -23,17 +23,6 @@ export default defineNuxtConfig({
     enabled: false
   },
 
-  app: {
-    head: {
-      htmlAttrs: {
-        'data-overlayscrollbars-initialize': ''
-      },
-      bodyAttrs: {
-        'data-overlayscrollbars-initialize': ''
-      }
-    }
-  },
-
   css: ['~/assets/css/main.css'],
 
   // @nuxt/content config
@@ -74,6 +63,8 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       yaml()
     ]
   },

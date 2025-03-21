@@ -30,8 +30,6 @@
     "nuxt-llms": "^0.1.0",
     "nuxt-og-image": "^5.0.5",
     "ofetch": "^1.4.1",
-    "overlayscrollbars": "^2.11.1",
-    "overlayscrollbars-vue": "^0.5.9",
     "shiki-transformer-color-highlight": "^1.0.0"
   },
   "devDependencies": {

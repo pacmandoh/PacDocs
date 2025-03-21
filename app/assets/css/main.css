@@ -1,7 +1,6 @@
 
 @import "tailwindcss" theme(static);
 @import "@nuxt/ui-pro";
-@import "overlayscrollbars/overlayscrollbars.css";
 
 @source "../../../content/**/*";
 
@@ -40,20 +39,4 @@
 /* Override default */
 :root {
   --ui-header-height: --spacing(20);
-}
-
-/* Customize OS theme */
-.os-theme-pacdocs {
-  box-sizing: border-box;
-  --os-size: 10px;
-  --os-padding-perpendicular: 2px;
-  --os-padding-axis: 2px;
-  --os-track-border-radius: 10px;
-  --os-handle-interactive-area-offset: 4px;
-  --os-handle-border-radius: var(--ui-radius);
-
-  /* Color */
-  --os-handle-bg: var(--ui-text-dimmed);
-  --os-handle-bg-hover: var(--ui-text-muted);
-  --os-handle-bg-active: var(--ui-text-toned);
 }
