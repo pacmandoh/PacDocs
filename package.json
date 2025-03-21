@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@iconify-json/logos": "^1.2.4",
-    "@iconify-json/lucide": "^1.2.31",
+    "@iconify-json/lucide": "^1.2.32",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/simple-icons": "^1.2.29",
@@ -25,7 +25,7 @@
     "@nuxt/ui-pro": "https://pkg.pr.new/@nuxt/ui-pro@64d35d1",
     "@rollup/plugin-yaml": "^4.1.2",
     "motion": "^12.5.0",
-    "motion-v": "0.13.0",
+    "motion-v": "0.13.1",
     "nuxt": "^3.16.0",
     "nuxt-llms": "^0.1.0",
     "nuxt-og-image": "^5.0.5",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.2.0",
-    "@nuxt/kit": "^3.16.0",
+    "@nuxt/kit": "^3.16.1",
     "@vueuse/components": "^13.0.0",
     "@vueuse/core": "^13.0.0",
     "@vueuse/nuxt": "^13.0.0",
